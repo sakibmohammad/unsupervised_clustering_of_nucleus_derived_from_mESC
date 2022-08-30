@@ -1,0 +1,49 @@
+plt.figure(figsize = (25,25));
+    # gets the list of filenames for a clust
+files = groups[0]
+    # only allow up to 30 images to be shown at a time
+if len(files) > 30:
+  print(f"Clipping cluster size from {len(files)} to 30")
+files = files[:29]
+    # plot each image in the cluster
+for index, file in enumerate(files):
+  plt.subplot(10,10,index+1);
+  img = load_img(file)
+  img = np.array(img)
+  plt.imshow(img)
+  plt.axis('off')
+  plt.title("cluster 0")
+
+
+plt.figure(figsize = (25,25));
+    # gets the list of filenames for a clust
+files = groups[1]
+    # only allow up to 30 images to be shown at a time
+if len(files) > 30:
+  print(f"Clipping cluster size from {len(files)} to 30")
+files = files[:29]
+    # plot each image in the cluster
+for index, file in enumerate(files):
+
+
+  plt.subplot(10,10,index+1);
+  img = load_img(file)
+  img = np.array(img)
+  plt.imshow(img)
+  plt.axis('off')
+  plt.title("cluster 1")
+plt.figure(figsize = (25,25));
+    # gets the list of filenames for a clust
+files = groups[2]
+    # only allow up to 30 images to be shown at a time
+if len(files) > 30:
+  print(f"Clipping cluster size from {len(files)} to 30")
+files = files[:29]
+    # plot each image in the cluster
+for index, file in enumerate(files):
+  plt.subplot(10,10,index+1);
+  img = load_img(file)
+  img = np.array(img)
+  plt.imshow(img)
+  plt.axis('off')
+  plt.title("cluster 2")
